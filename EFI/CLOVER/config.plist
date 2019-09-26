@@ -200,19 +200,6 @@
 		</dict>
 		<key>Properties</key>
 		<dict>
-			<key>PciRoot(0)/Pci(0x02,0)</key>
-			<dict>
-				<key>AAPL,ig-platform-id</key>
-				<data>
-				AAAWWQ==
-				</data>
-				<key>device-id</key>
-				<data>
-				FlkAAA==
-				</data>
-				<key>enable-hdmi20</key>
-				<integer>1</integer>
-			</dict>
 			<key>PciRoot(0)/Pci(0x1c,0x05)/Pci(0,0)</key>
 			<dict>
 				<key>compatible</key>
@@ -277,7 +264,7 @@
 		<key>Inject</key>
 		<dict>
 			<key>Intel</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
