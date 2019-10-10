@@ -77,6 +77,20 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
+					<string>change EC0 to EC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUMwXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change _OSI to XOSI</string>
 					<key>Disabled</key>
 					<false/>
@@ -241,7 +255,7 @@
 			<string>BOOTX64.EFI</string>
 			<string>Windows_OS</string>
 			<string>Preboot</string>
-			<string>#Recovery</string>
+			<string>Recovery</string>
 		</array>
 		<key>Language</key>
 		<string>zh-Hans:0</string>
@@ -275,8 +289,6 @@
 		<array>
 			<string>\System\Library\Extensions\IOGraphicsFamily.kext</string>
 		</array>
-		<key>KernelPm</key>
-		<true/>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
