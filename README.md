@@ -33,6 +33,23 @@ This Clover config work for Lenovo Yoga 730-13IKB
 * Disable Security -> Secure Boot
 * Switch RAID to AHCI in Configuration -> SATA Controller Mode
 
+## Misc after install
+
+* [Enable HiDPI](https://github.com/xzhih/one-key-hidpi)
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"
+```
+
+* [Generate customized CPUFriendDataProvider.kext](https://github.com/stevezhengshiqi/one-key-cpufriend)
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/stevezhengshiqi/one-key-cpufriend/master/one-key-cpufriend.sh)"
+```
+
+* Ignore 10.15 When you installed Majove or below
+```bash
+softwareupdate --ignore "macOS Catalina"
+```
+
 ## FAQ
 
 - Q: Touchpad not work on First boot?  
