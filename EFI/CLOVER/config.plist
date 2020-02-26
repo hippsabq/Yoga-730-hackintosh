@@ -14,6 +14,8 @@
 			<dict>
 				<key>FixHDA</key>
 				<true/>
+				<key>FixPNLF</key>
+				<true/>
 				<key>FixHPET</key>
 				<true/>
 				<key>FixIPIC</key>
@@ -173,7 +175,6 @@
 			<string>SSDT-XOSI.aml</string>
 			<string>SSDT-PS2K.aml</string>
 			<string>SSDT-GPRW.aml</string>
-			<string>SSDT-PNLF.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -184,11 +185,6 @@
 		<string>LastBootedVolume</string>
 		<key>Timeout</key>
 		<integer>3</integer>
-	</dict>
-	<key>BootGraphics</key>
-	<dict>
-		<key>EFILoginHiDPI</key>
-		<integer>1</integer>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -215,7 +211,7 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
-		<key>Custom</key>
+		<key>#Custom</key>
 		<dict>
 			<key>Entries</key>
 			<array>
