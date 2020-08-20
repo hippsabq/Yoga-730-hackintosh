@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Author</key>
-	<string>dodvip123 fixed by elaterspark</string>
+	<string>dodvip123 (fixed by Pit256)</string>
 	<key>Description</key>
 	<string>Black and white minimalistic theme</string>
 	<key>Theme</key>
@@ -11,7 +11,7 @@
 		<key>Background</key>
 		<dict>
 			<key>Dark</key>
-			<false/>
+			<true/>
 			<key>Path</key>
 			<string>background.png</string>
 			<key>Sharp</key>
@@ -41,7 +41,7 @@
 			<key>MenuTitle</key>
 			<true/>
 			<key>Revision</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Font</key>
 		<dict>
@@ -57,12 +57,14 @@
 			<key>Big</key>
 			<string>selection.png</string>
 			<key>Color</key>
-			<string>0xFFFFFF80</string>
+			<string>0xFFFFFF30</string>
+			<key>OnTop</key>
+			<false/>
 			<key>Small</key>
 			<string>selection_small.png</string>
 		</dict>
 	</dict>
 	<key>Year</key>
-	<string>2016</string>
+	<string>2019</string>
 </dict>
 </plist>

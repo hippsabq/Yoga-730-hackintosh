@@ -14,7 +14,7 @@
 			<dict>
 				<key>FixHDA</key>
 				<true/>
-				<key>FixPNLF</key>
+				<key>AddPNLF</key>
 				<true/>
 				<key>FixHPET</key>
 				<true/>
@@ -188,13 +188,22 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
-		<dict>
-			<key>Inject</key>
-			<integer>15</integer>
-		</dict>
 		<key>Properties</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AAAWWQ==</data>
+				<key>device-id</key>
+				<data>FlkAAA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<integer>15</integer>
+			</dict>
 			<key>PciRoot(0)/Pci(0x1c,0x05)/Pci(0,0)</key>
 			<dict>
 				<key>compatible</key>
@@ -211,24 +220,6 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
-		<key>#Custom</key>
-		<dict>
-			<key>Entries</key>
-			<array>
-				<dict>
-					<key>Arguments</key>
-					<string>initrd=/PhoenixOS/initrd.img quiet root=/dev/ram0 androidboot.hardware=android_x86 SRC=/PhoenixOS</string>
-					<key>FullTitle</key>
-					<string>Phoenix OS</string>
-					<key>Image</key>
-					<string>phoenix</string>
-					<key>Path</key>
-					<string>\PhoenixOS\kernel</string>
-					<key>Type</key>
-					<string>Linux</string>
-				</dict>
-			</array>
-		</dict>
 		<key>Hide</key>
 		<array>
 			<string>BOOTX64.EFI</string>
@@ -252,12 +243,10 @@
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>#ig-platform-id</key>
-		<string>0x59160000</string>
 		<key>Inject</key>
 		<dict>
 			<key>Intel</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
@@ -362,6 +351,21 @@
 				</data>
 			</dict>
 		</array>
+	</dict>
+	<key>Quirks</key>
+	<dict>
+		<key>AvoidRuntimeDefrag</key>
+		<true/>
+		<key>EnableSafeModeSlide</key>
+		<true/>
+		<key>EnableWriteUnprotector</key>
+		<true/>
+		<key>ProvideConsoleGopEnable</key>
+		<true/>
+		<key>SetupVirtualMap</key>
+		<true/>
+		<key>SyncRuntimePermissions</key>
+		<true/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>

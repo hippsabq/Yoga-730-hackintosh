@@ -20,7 +20,7 @@ This Clover config work for Lenovo Yoga 730-13IKB
 * PS2 Keyboard  [VoodooPS2Controller.kext](https://github.com/acidanthera/VoodooPS2/releases/latest)
 * TouchPad and TouchScreen work, [VoodooI2C.kext](https://github.com/alexandred/VoodooI2C/releases/latest). 
 * Battery and cpu sensor, [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases/latest). 
-* USB [USBInjectAll.kext](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads)
+* USB [USBInjectAll.kext](https://github.com/Sniki/OS-X-USB-Inject-All/releases/tag/latest)
 * SSD Trim by Clover patch 
 * Camera works fine
 * Hibernation and wake up
