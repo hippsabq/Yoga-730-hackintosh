@@ -188,6 +188,11 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>Audio</key>
+		<dict>
+			<key>Inject</key>
+			<integer>15</integer>
+		</dict>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
@@ -198,11 +203,6 @@
 				<data>FlkAAA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-			<dict>
-				<key>layout-id</key>
-				<integer>15</integer>
 			</dict>
 			<key>PciRoot(0)/Pci(0x1c,0x05)/Pci(0,0)</key>
 			<dict>
