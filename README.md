@@ -23,8 +23,8 @@ This Clover config work for Lenovo Yoga 730-13IKB
 * SSD Trim by Clover patch 
 * Camera works fine
 * Hibernation and wake up
-* Wlan Replaced by DW1560/DW1820A [AirportBrcmFixup.kext](https://github.com/acidanthera/AirportBrcmFixup/releases/latest)
-* Bluetooth 4.0 [BrcmBluetoothInjector.kext](https://github.com/acidanthera/BrcmPatchRAM/releases)
+* Intel 8250AC [itlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases/latest)
+* Bluetooth 4.0 [IntelBluetoothInjector.kext](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases)
 
 ## BIOS setting before install
 
