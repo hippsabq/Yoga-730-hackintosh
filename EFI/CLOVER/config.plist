@@ -20,6 +20,8 @@
 				<true/>
 				<key>FixIPIC</key>
 				<true/>
+				<key>FixHeaders</key>
+				<true/>
 				<key>FixRegions</key>
 				<true/>
 			</dict>
@@ -191,7 +193,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>15</integer>
+			<string>No</string>
 		</dict>
 		<key>Properties</key>
 		<dict>
@@ -209,6 +211,11 @@
 				<key>compatible</key>
 				<string>pci14e4,4353</string>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<integer>15</integer>
+			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -225,7 +232,7 @@
 			<string>BOOTX64.EFI</string>
 			<string>Windows_OS</string>
 			<string>Preboot</string>
-			<string>Recovery</string>
+			<string>#Recovery</string>
 		</array>
 		<key>Language</key>
 		<string>zh-Hans:0</string>
@@ -356,15 +363,25 @@
 	<dict>
 		<key>AvoidRuntimeDefrag</key>
 		<true/>
-		<key>EnableSafeModeSlide</key>
-		<true/>
 		<key>EnableWriteUnprotector</key>
 		<true/>
-		<key>ProvideConsoleGopEnable</key>
+		<key>MmioWhitelist</key>
+		<array/>
+		<key>ProvideCustomSlide</key>
 		<true/>
 		<key>SetupVirtualMap</key>
 		<true/>
 		<key>SyncRuntimePermissions</key>
+		<true/>
+		<key>KernelCache</key>
+		<string>Auto</string>
+		<key>DisableIoMapper</key>
+		<true/>
+		<key>DisableLinkeditJettison</key>
+		<true/>
+		<key>PowerTimeoutKernelPanic</key>
+		<true/>
+		<key>ThirdPartyDrives</key>
 		<true/>
 	</dict>
 	<key>RtVariables</key>
